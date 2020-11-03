@@ -48,6 +48,7 @@ namespace Calculator
         {
             int index = @operator == null ? 0 : 1;
             if (buttonText == "," && numbers[index].Contains(",")) return;
+            if (numbers[0].StartsWith("0")) numbers[0] = numbers[0].Substring(1); // remove 0 from the start of number input
             numbers[index] += buttonText;
             UpdateCalculatorText();
         }
@@ -83,16 +84,16 @@ namespace Calculator
             }
             if(result != null)
             {
-                numbers[0] = result.ToString();
+                numbers[1] = result.ToString().Trim();
                 @operator = newOperator;
-                numbers[1] = null;
+                numbers[0] = null;
                 UpdateCalculatorText();
             }
         }
         private void Clear()
         {
-            numbers[0] = "0";
-            numbers[1] = null;
+            numbers[1] = "0"; // on DEL event zero not from the calcInputView beggining
+            numbers[0] = null;
             @operator = null;
             UpdateCalculatorText();
         }
