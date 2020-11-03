@@ -10,34 +10,4 @@
 		<item name="android:layout_margin">10dp</item>
 		<item name="android:background">#333</item>
     </style>
-	<style name="AppDeleteButton">
-		<item name="android:layout_width">5dp</item>
-		<item name="android:layout_height">5dp</item>
-		<item name="layout_rowWeight">1</item>
-		<item name="layout_columnWeight">1</item>
-		<item name="android:textSize">25sp</item>
-		<item name="android:onClick">ButtonClick</item>
-		<item name="android:layout_margin">10dp</item>
-		<item name="android:background">#533</item>
-	</style>
-	<style name="AppResultButton">
-		<item name="android:layout_width">5dp</item>
-		<item name="android:layout_height">5dp</item>
-		<item name="layout_rowWeight">1</item>
-		<item name="layout_columnWeight">1</item>
-		<item name="android:textSize">25sp</item>
-		<item name="android:onClick">ButtonClick</item>
-		<item name="android:layout_margin">10dp</item>
-		<item name="android:background">#335</item>
-	</style>
-	<style name="AppOperationButton">
-		<item name="android:layout_width">5dp</item>
-		<item name="android:layout_height">5dp</item>
-		<item name="layout_rowWeight">1</item>
-		<item name="layout_columnWeight">1</item>
-		<item name="android:textSize">25sp</item>
-		<item name="android:onClick">ButtonClick</item>
-		<item name="android:layout_margin">10dp</item>
-		<item name="android:background">#445</item>
-	</style>
 </resources>
