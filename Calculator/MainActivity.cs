@@ -24,35 +24,6 @@ namespace Calculator
 
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
-        public string Number;
-        public string NumberInput;
-
-        public string GetNumberInput(string input)
-        {
-            if (input == "*" ||
-                input == "/" ||
-                input == "-" ||
-                input == "+" ||
-                input == "=" ||
-                input == "DEL") return Number;
-            else return Number = Number + input;
-        }
-        public decimal CalculateDecimalResult(string operation, decimal firstNum, decimal secondNum)
-        {
-            switch (operation)
-            {
-                case "+":
-                    return firstNum + secondNum;
-                case "-":
-                    return firstNum - secondNum;
-                case "*":
-                    return firstNum * secondNum;
-                case "/":
-                    return firstNum / secondNum;
-                default:
-                    return -1;
-            }
-        }
 
     }
 }
