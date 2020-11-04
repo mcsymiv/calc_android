@@ -42,10 +42,10 @@ namespace CalcTest
         {
             if (operand.Length > 1)
             {
-                string[] number = operand.Split();
+                char[] number = operand.ToCharArray();
                 foreach (var item in number)
                 {
-                    calc.TapOnButton(item);
+                    calc.TapOnButton(item.ToString());
                 }
             }
             else calc.TapOnButton(operand);
