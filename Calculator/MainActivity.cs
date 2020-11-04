@@ -84,22 +84,22 @@ namespace Calculator
             }
             if(result != null)
             {
-                numbers[1] = result.ToString().Trim();
+                numbers[0] = result.ToString().Trim();
                 @operator = newOperator;
-                numbers[0] = null;
+                numbers[1] = null;
                 UpdateCalculatorText();
             }
         }
         private void Clear()
         {
-            numbers[1] = "0"; // on DEL event zero not from the calcInputView beggining
-            numbers[0] = null;
+            numbers[0] = "0";
+            numbers[1] = null;
             @operator = null;
             UpdateCalculatorText();
         }
         private void UpdateCalculatorText()
         {
-            calcText.Text = $"{numbers[0]} {@operator} {numbers[1]}";
+            calcText.Text = $"{numbers[0]}{@operator}{numbers[1]}";
         }
     }
 }

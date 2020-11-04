@@ -114,5 +114,66 @@ namespace CalcTest.Views
         {
             return App.Query(textView)[0].Text.Trim();
         }
+        public string CalcViewText
+        {
+            get
+            {
+                return App.Query(textView)[0].Text.Trim();
+            }
+        }
+
+        public CalcView TapOnButton(string symbol)
+        {
+            switch (symbol)
+            {
+                case "1":
+                    App.Tap(btnOne);
+                    return this;
+                case "2":
+                    App.Tap(btnTwo);
+                    return this;
+                case "3":
+                    App.Tap(btnThree);
+                    return this;
+                case "4":
+                    App.Tap(btnFour);
+                    return this;
+                case "5":
+                    App.Tap(btnFive);
+                    return this;
+                case "6":
+                    App.Tap(btnSix);
+                    return this;
+                case "7":
+                    App.Tap(btnSeven);
+                    return this;
+                case "8":
+                    App.Tap(btnEight);
+                    return this;
+                case "9":
+                    App.Tap(btnNine);
+                    return this;
+                case "0":
+                    App.Tap(btnZero);
+                    return this;
+                case ",":
+                    App.Tap(btnComma);
+                    return this;
+                case "+":
+                    App.Tap(btnPlus);
+                    return this;
+                case "-":
+                    App.Tap(btnMinus);
+                    return this;
+                case "*":
+                    App.Tap(btnProduct);
+                    return this;
+                case "/":
+                    App.Tap(btnDivide);
+                    return this;
+                default:
+                    return this;
+            }
+        }
     }
 }

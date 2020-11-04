@@ -21,15 +21,17 @@ namespace CalcTest
         {
             CalcView.Repl();
         }
-        [TestCase("2")]
-        public void CheckAddition(string expected)
+        [TestCase("2", "+", "3", "5", Description = "Check addition")]
+        public void CheckAddition(string first, string oper, string second, string expected)
         {
-            calc.TapOnOne()
-                .TapOnPlus()
-                .TapOnOne()
-                .TapOnEqual();
-            string result = calc.GetResult();
-            Assert.AreEqual(expected, result);
+            calc.TapOnButton(first);
+            Assert.AreEqual(first, calc.CalcViewText);
+            calc.TapOnButton(oper);
+            Assert.AreEqual(first + oper, calc.CalcViewText);
+            calc.TapOnButton(second);
+            Assert.AreEqual(first + oper + second, calc.CalcViewText);
+            calc.TapOnEqual();
+            Assert.AreEqual(expected, calc.CalcViewText);
         }
     }
 }
