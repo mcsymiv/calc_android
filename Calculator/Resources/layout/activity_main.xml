@@ -3,6 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="RequiredSizeWidth,RequiredSizeHeight"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -17,7 +18,6 @@
             android:textSize="36sp"
             android:textColor="#aaa"
             android:text="0"
-            android:layout_gravity="right"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
         </TextView>
@@ -32,9 +32,9 @@
         app:columnCount="4">
         <!-- DEL button -->
         <Button
-            style="@style/AppDeleteButton"
+            style="@style/AppTheme"
             android:text="DEL"
-            app:layout_columnSpan="3" 
+            app:layout_columnSpan="3"
             />
         <!-- DIVIDE / -->
         <Button
@@ -60,7 +60,7 @@
             android:text="9"
             app:layout_columnSpan="1"
             />
-        <!-- MULTIPLY * -->
+        <!-- PRODUCT * -->
         <Button
             style="@style/AppTheme"
             android:text="*"
@@ -84,7 +84,7 @@
             android:text="6"
             app:layout_columnSpan="1"
             />
-        <!-- SUBTRACTION - -->
+        <!-- MINUS - -->
         <Button
             style="@style/AppTheme"
             android:text="-"
@@ -128,7 +128,7 @@
             />
         <!-- EQUAL = -->
         <Button
-            style="@style/AppResultButton"
+            style="@style/AppTheme"
             android:text="="
             app:layout_columnSpan="2"
             />
