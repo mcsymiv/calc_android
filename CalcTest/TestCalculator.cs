@@ -90,13 +90,41 @@ namespace CalcTest
         {
             for (int i = 0; i < count; i++)
             {
-                calc.TapOnNine().TapOnNine().TapOnNine().
+                calc.TapOnNine().TapOnButton("9").TapOnNine().
                     TapOnNine().TapOnNine().TapOnNine()
                     .TapOnNine().TapOnNine().TapOnNine();
                 if (i != (count - 1)) calc.TapOnButton("*");
             }
             calc.TapOnEqual();
             Assert.AreEqual(result, calc.CalcViewText);
+        }
+
+        [Test]
+        public void MultiplyBigNumber()
+        {
+            calc.TapOnNine().TapOnSix().TapOnNine()
+                    .TapOnNine().TapOnNine().TapOnNine()
+                    .TapOnNine().TapOnNine().TapOnNine();
+            Assert.AreEqual("969999999", calc.CalcViewText);
+            calc.TapOnButton("*");
+            calc.TapOnNine().TapOnNine().TapOnNine()
+                    .TapOnNine().TapOnNine().TapOnNine()
+                    .TapOnNine().TapOnNine().TapOnNine();
+            Assert.AreEqual("969999999*999999999", calc.CalcViewText);
+            calc.TapOnEqual();
+            Assert.AreEqual("9.99999998E+17", calc.CalcViewText);
+            calc.TapOnButton("*");
+            calc.TapOnNine().TapOnNine().TapOnNine()
+                    .TapOnNine().TapOnNine().TapOnNine()
+                    .TapOnNine().TapOnNine().TapOnNine();
+            calc.TapOnEqual();
+            Assert.AreEqual("9.99999997E+26", calc.CalcViewText);
+            calc.TapOnButton("*");
+            calc.TapOnNine().TapOnNine().TapOnNine()
+                    .TapOnNine().TapOnNine().TapOnNine()
+                    .TapOnNine().TapOnNine().TapOnNine();
+            calc.TapOnEqual();
+            Assert.AreEqual("9.99999996E+35", calc.CalcViewText);
         }
     }
 }
