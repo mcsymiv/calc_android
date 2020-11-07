@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "we3UuNH8WN+Ac6/qmHB6knJrixyO6HY7bJa6ASB7PdABU/JmVF03YkQpa6YdmMgt4Mfll9LMvMOGiAN1l5j3pg==",
+  "dgSpecHash": "4GS8Gruvh4NtS22rOfEKE36aV1grN8XN56La+zUDLTQabutIs8vSrNgIMLsHg/Gh6OV7BLGYasZP/5qiFbvVuQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mcsymiv\\Desktop\\git\\my_calc\\Calculator\\Calculator.csproj",
+  "projectFilePath": "C:\\Users\\mcsymiv\\Desktop\\git\\to_calc\\Calculator\\Calculator.csproj",
   "expectedPackageFiles": [
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.core.common\\1.1.1.3\\xamarin.android.arch.core.common.1.1.1.3.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.core.runtime\\1.1.1.3\\xamarin.android.arch.core.runtime.1.1.1.3.nupkg.sha512",

@@ -17,6 +17,7 @@
             android:textSize="36sp"
             android:textColor="#aaa"
             android:text="0"
+            android:layout_gravity="left"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
         </TextView>
@@ -113,10 +114,10 @@
             android:text="+"
             app:layout_columnSpan="1"
             />
-        <!-- COMMA , -->
+        <!-- COMMA . -->
         <Button
             style="@style/AppTheme"
-            android:text=","
+            android:text="."
             app:layout_columnSpan="1"
             />
         <!-- ZERO 0 -->

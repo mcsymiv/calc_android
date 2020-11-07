@@ -1531,11 +1531,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mcsymiv\\Desktop\\git\\my_calc\\Calculator\\Calculator.csproj",
+      "projectUniqueName": "C:\\Users\\mcsymiv\\Desktop\\git\\to_calc\\Calculator\\Calculator.csproj",
       "projectName": "Calculator",
-      "projectPath": "C:\\Users\\mcsymiv\\Desktop\\git\\my_calc\\Calculator\\Calculator.csproj",
+      "projectPath": "C:\\Users\\mcsymiv\\Desktop\\git\\to_calc\\Calculator\\Calculator.csproj",
       "packagesPath": "C:\\Users\\mcsymiv\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mcsymiv\\Desktop\\git\\my_calc\\Calculator\\obj\\",
+      "outputPath": "C:\\Users\\mcsymiv\\Desktop\\git\\to_calc\\Calculator\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [

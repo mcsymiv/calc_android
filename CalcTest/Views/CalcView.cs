@@ -24,7 +24,7 @@ namespace CalcTest.Views
         public Query btnSeven = x => x.Marked("7");
         public Query btnEight = x => x.Marked("8");
         public Query btnNine = x => x.Marked("9");
-        public Query btnComma = x => x.Marked(",");
+        public Query btnComma = x => x.Marked(".");
 
         public Query btnPlus = x => x.Marked("+");
         public Query btnProduct = x => x.Marked("*");
@@ -156,9 +156,6 @@ namespace CalcTest.Views
                 case "0":
                     App.Tap(btnZero);
                     return this;
-                case ",":
-                    App.Tap(btnComma);
-                    return this;
                 case "+":
                     App.Tap(btnPlus);
                     return this;
@@ -170,6 +167,9 @@ namespace CalcTest.Views
                     return this;
                 case "/":
                     App.Tap(btnDivide);
+                    return this;
+                case ".":
+                    App.Tap(btnComma);
                     return this;
                 default:
                     return this;
